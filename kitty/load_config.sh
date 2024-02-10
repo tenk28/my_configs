@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PATH_TO_PLACE="$HOME/.config/kitty"
-CONFIG_FILES=("kitty.conf" "open-actions.conf")
+CONFIG_FILES=("kitty.conf" "open-actions.conf" "tyler_durden.png")
 BINARY_NAME="kitty"
 
 if [ -x "$(command -v $BINARY_NAME)" ]; then
