@@ -113,6 +113,7 @@ fi
 
 export PATH=$PATH:~/bin
 export PATH=$PATH:/usr/games
+export PATH=$PATH:/snap/bin
 
 alias rm='rm -i'
 alias cp='cp -i'
