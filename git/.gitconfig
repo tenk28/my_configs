@@ -3,3 +3,5 @@
 # Please adapt and uncomment the following lines:
 	name = Dmytro Shtrikker
 	email = shtrikker28@gmail.com
+[push]
+	autoSetupRemote = true
