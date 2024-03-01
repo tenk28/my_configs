@@ -121,5 +121,22 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias ll='ls -lhF --hyperlink=auto --color=auto'
 
+fuck () {
+    TF_PYTHONIOENCODING=$PYTHONIOENCODING;
+    export TF_SHELL=zsh;
+    export TF_ALIAS=fuck;
+    TF_SHELL_ALIASES=$(alias);
+    export TF_SHELL_ALIASES;
+    TF_HISTORY="$(fc -ln -10)";
+    export TF_HISTORY;
+    export PYTHONIOENCODING=utf-8;
+    TF_CMD=$(
+        thefuck THEFUCK_ARGUMENT_PLACEHOLDER $@
+    ) && eval $TF_CMD;
+    unset TF_HISTORY;
+    export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
+    test -n "$TF_CMD" && print -s $TF_CMD
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
