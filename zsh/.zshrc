@@ -95,6 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
+  export TERM=screen
 else
   export EDITOR='code'
 fi
@@ -112,6 +113,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH=$PATH:~/bin
+export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/usr/games
 export PATH=$PATH:/snap/bin
 
