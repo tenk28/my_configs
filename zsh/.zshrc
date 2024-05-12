@@ -95,7 +95,6 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
-  export TERM=screen
 else
   export EDITOR='code'
 fi
@@ -121,7 +120,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
-alias ll='ls -lhF --hyperlink=auto --color=auto'
+alias ll='eza -l --hyperlink --no-user --no-time'
 
 fuck () {
     TF_PYTHONIOENCODING=$PYTHONIOENCODING;
