@@ -12,13 +12,17 @@ load_git_config() {
   bash git/load_config.sh
 }
 
+load_alacritty_config() {
+  bash alacritty/load_config.sh
+}
+
 load_flameshot_config() {
   bash flameshot/load_config.sh
 }
 
 load_all_configs() {
   echo -- Loading all configs
-  load_kitty_config
+  load_alacritty_config
   load_zsh_config
   load_git_config
   load_flameshot_config
@@ -33,6 +37,7 @@ else
       kitty) load_kitty_config;;
       zsh) load_zsh_config;;
       git) load_git_config;;
+      alacritty) load_alacritty_config;;
       flameshot) load_flameshot_config;;
       *) echo "!!! Config for \"$config_binary\" not found"
     esac
