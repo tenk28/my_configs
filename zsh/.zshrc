@@ -120,7 +120,6 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
-alias ll='eza -l --hyperlink --no-user --no-time'
 
 fuck () {
     TF_PYTHONIOENCODING=$PYTHONIOENCODING;
