@@ -27,6 +27,7 @@ TERM = "xterm-256color"
 
 [font]
 size = 8.0
+normal = { family = "JetBrainsMono", style = "Regular" }
 
 [[keyboard.bindings]]
 action = "ToggleFullscreen"
