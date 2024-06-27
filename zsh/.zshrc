@@ -93,11 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='code'
-fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -115,6 +111,8 @@ export PATH=$PATH:~/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/usr/games
 export PATH=$PATH:/snap/bin
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.local/bin
 
 alias rm='rm -i'
 alias cp='cp -i'
